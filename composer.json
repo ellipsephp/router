@@ -3,7 +3,11 @@
     "type": "library",
     "description": "Router allowing to build Psr-15 dispatcher based on a Psr-7 request",
     "keywords": [
-        "router"
+        "psr-7",
+        "psr-15",
+        "router",
+        "FastRoute",
+        "AuraRouter"
     ],
     "license": "MIT",
     "homepage": "https://github.com/ellipsephp/router",
