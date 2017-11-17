@@ -6,9 +6,9 @@ use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Message\ResponseInterface;
 
 use Ellipse\Router;
-use Ellipse\Router\Adapter\Handler;
-use Ellipse\Router\Adapter\Match;
-use Ellipse\Router\Adapter\RouterAdapterInterface;
+use Ellipse\Router\Handler;
+use Ellipse\Router\Match;
+use Ellipse\Router\RouterAdapterInterface;
 use Ellipse\Router\Exceptions\RequestNotHandledException;
 
 describe('Router', function () {

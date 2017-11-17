@@ -7,7 +7,7 @@ use Psr\Http\Message\ResponseInterface;
 
 use Interop\Http\Server\RequestHandlerInterface;
 
-use Ellipse\Router\Adapter\RouterAdapterInterface;
+use Ellipse\Router\RouterAdapterInterface;
 use Ellipse\Router\Exceptions\RequestNotHandledException;
 
 class Router implements RequestHandlerInterface
@@ -22,21 +22,21 @@ class Router implements RequestHandlerInterface
     /**
      * The router adapter.
      *
-     * @var \Ellipse\Router\Adapter\RouterAdapterInterface
+     * @var \Ellipse\Router\RouterAdapterInterface
      */
     private $adapter;
 
     /**
      * The return of the adapter ->match() method.
      *
-     * @var null|\Ellipse\Router\Adapter\Match
+     * @var null|\Ellipse\Router\Match
      */
     private $match;
 
     /**
      * Set up a router with the given router adapter.
      *
-     * @param \Ellipse\Router\Adapter\RouterAdapterInterface $adapter
+     * @param \Ellipse\Router\RouterAdapterInterface $adapter
      */
     public function __construct(RouterAdapterInterface $adapter)
     {
